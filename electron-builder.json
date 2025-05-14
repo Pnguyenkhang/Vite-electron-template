@@ -1,0 +1,30 @@
+{
+  "appId": "com.hpnElectronics.alvna",
+  "productName": "Alvna",
+  "files": [
+    "dist-electron/**/*",
+    "dist-react/**/*",   
+    "package.json"        
+  ],
+  "directories": {
+    "output": "release"
+  },
+  "icon": "public/icon.png",
+  "mac": {
+    "target": ["dmg", "zip"],
+    "category": "public.app-category.utilities",
+    "icon": "public/icon.icns"
+  },
+  "win": {
+    "target": ["nsis", "portable"],
+    "icon": "public/icon.ico"
+  },
+  "linux": {
+    "target": ["AppImage", "deb"],
+    "category": "Utility",
+    "icon": "public"
+  },
+  "extraMetadata": {
+    "main": "dist-electron/main.js"
+  }
+}
